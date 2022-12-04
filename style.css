@@ -1,5 +1,6 @@
 /* Import Google font - Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -13,9 +14,15 @@ body{
   min-height: 100vh;
   background: #4A98F7;
 }
+#texth2{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    text-shadow: 3px 3px 3px #ababab;
+    font-size: 3.5rem;
+}
 .container{
   display: flex;
-  width: 100%;
+  width: 80%;
   gap: 10px;
   padding: 10px;
   max-width: 1050px;
@@ -78,7 +85,7 @@ section{
 }
 .colors .option:nth-child(1){
   background-color: #fff;
-  border: 1px solid #bfbfbf;
+  border: 2px solid #b6b5b5;
 }
 .colors .option:nth-child(2){
   background-color: #000;
@@ -101,13 +108,14 @@ section{
   width: 12px;
   background: inherit;
   border-radius: inherit;
-  border: 2px solid #fff;
+  border: 2px solid rgb(237, 235, 235);
   transform: translate(-50%, -50%);
 }
 .colors .option:first-child.selected::before{
-  border-color: #ccc;
+  border-color: rgb(161, 161, 161);
 }
 .option #color-picker{
+    
   opacity: 0;
   cursor: pointer;
 }
@@ -130,11 +138,11 @@ section{
 }
 .clear-canvas:hover{
   color: #fff;
-  background: #6C757D;
+  background: #060606;
 }
 .buttons .save-img{
-  background: #4A98F7;
-  border: 1px solid #4A98F7;
+  background: #090909;
+  /* border: 1px solid #4A98F7; */
 }
 .drawing-board{
   flex: 1;
@@ -143,4 +151,7 @@ section{
 .drawing-board canvas{
   width: 100%;
   height: 100%;
+}
+#customcolor{
+    font-size: 10px;
 }
